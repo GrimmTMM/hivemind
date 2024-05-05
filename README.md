@@ -1,6 +1,6 @@
 ## About HiveMind
 
-Pirate network
+Anon network
 <pre>
      .... NO! ...                  ... MNO! ...
    ..... MNO!! ...................... MNNOO! ...
