@@ -1,0 +1,49 @@
+.welcome-message {
+    width: 60%;
+    margin: 0px auto 10px auto;
+    padding: 1%;
+    border-bottom: 1px solid #00d600;
+    animation: 3s infinite alternate glitchy;
+}
+
+.small-welcome {
+    text-align: right;
+    display: none;
+}
+
+@media only screen and (max-device-width: 480px){
+    .large-welcome {
+        display: none;
+    }
+
+    .small-welcome {
+        display: block;
+    }
+}
+
+h1 {
+    margin: 0px 0px 0px 0px;
+}
+
+.welcome-message td{
+    width: 50%;
+    padding: 0px 10px 0px 10px;
+    text-align: center;
+}
+
+.logo {
+    image-rendering: pixelated;
+    width: 100%;
+}
+
+@keyframes glitchy {
+    0% { filter: brightness(100%); }
+    90% { filter: brightness(110%); }
+    99% { filter: brightness(100%); }
+    100% { filter: brightness(110%); }
+}
+
+.spacer {
+    display: inline-block;
+    padding: 2%;
+}

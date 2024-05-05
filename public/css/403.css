@@ -1,0 +1,16 @@
+.center {
+    margin-top: 6%;
+    text-align: center;
+}
+
+.error-text {
+    margin-top: 2%;
+}
+
+.big-text {
+    font-size: 200%;
+}
+
+.input-container {
+    display: none;
+}

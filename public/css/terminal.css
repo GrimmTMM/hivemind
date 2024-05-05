@@ -1,0 +1,90 @@
+.terminal-container {
+    height: 100%;
+    width: 100%;
+}
+
+.indicator {
+    height: min-content;
+}
+
+.terminal {
+    height: 94%;
+    width: 100%;
+    overflow: auto;
+    overflow-y: scroll;
+}
+.terminal::-webkit-scrollbar {
+    width: 0px;
+    height: 0px;
+}
+
+.input-container {
+    height: 5%;
+    width: 100%;
+    text-align: center;
+    vertical-align: middle;
+    border-top: 1px solid #00d600;
+}
+
+.left {
+    width: 3%;
+}
+
+.left a {
+    font-size: 150%;
+}
+
+.text {
+    font-family: "Lucida Console";
+    color: #00d600;
+    font-size: 120%;
+    text-shadow: 1px 1px 10px #00d600;
+}
+
+.subtitle {
+    opacity: 50%;
+    font-family: "Lucida Console";
+    color: #00d600;
+    text-shadow: 1px 1px 10px #00d600;
+}
+
+.accent {
+    color: #ffffff;
+    text-shadow: 1px 1px 10px #ffffff;
+    font-weight: bolder;
+}
+
+.accent-danger {
+    color: #e75050;
+    text-shadow: 1px 1px 10px #e75050;
+    font-weight: bolder;
+}
+
+.input {
+    border: none;
+    outline: none;
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+    background-color: transparent;
+    caret-color: transparent;
+    animation: .5s infinite alternate blinker;
+}
+
+.input:not(:placeholder-shown) {
+    animation: none;
+}
+
+.input:focus::placeholder {
+    color: transparent;
+    text-shadow: none;
+}
+
+@keyframes blinker {  
+    0% { opacity: 1.0; }
+    100% { opacity: 0.0; }
+}
+
+::placeholder {
+    color: #00d600;
+}
